@@ -1,0 +1,41 @@
+{
+  "server": "https://ntfy.sh",
+  "topic": "<your-private-topic-generated-on-your-pc>",
+  "token": null,
+  "configVersion": 2,
+  "includeSessionTitle": false,
+  "allowInsecure": false,
+  "priorities": {
+    "TURN_FINISHED": 4,
+    "WAITING_FOR_USER": 4,
+    "WAITING_FOR_PERMISSION": 5,
+    "API_ERROR": 5,
+    "SESSION_LIMIT": 5,
+    "PROCESS_EXITED_ERROR": 5,
+    "USAGE_WARNING": 3,
+    "USAGE_CRITICAL": 4,
+    "WAITING_UNKNOWN": 4
+  },
+  "holdSeconds": {
+    "TURN_FINISHED": 0,
+    "WAITING_FOR_USER": 0,
+    "WAITING_FOR_PERMISSION": 0,
+    "API_ERROR": 0,
+    "SESSION_LIMIT": 0,
+    "PROCESS_EXITED_ERROR": 0,
+    "USAGE_WARNING": 0,
+    "USAGE_CRITICAL": 0,
+    "WAITING_UNKNOWN": 0
+  },
+  "types": {
+    "TURN_FINISHED": true,
+    "WAITING_FOR_USER": true,
+    "WAITING_FOR_PERMISSION": true,
+    "API_ERROR": true,
+    "SESSION_LIMIT": true,
+    "PROCESS_EXITED_ERROR": true,
+    "USAGE_WARNING": true,
+    "USAGE_CRITICAL": true,
+    "WAITING_UNKNOWN": true
+  }
+}

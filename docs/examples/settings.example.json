@@ -1,7 +1,0 @@
-{
-  "notificationsEnabled": true,
-  "soundsEnabled": true,
-  "phoneEnabled": false,
-  "appearance": "system",
-  "phoneSetup": { "state": "new" }
-}

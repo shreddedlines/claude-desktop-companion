@@ -1,6 +1,0 @@
-# Do NOT let Git change line endings.
-# The release manifest (src/tools/stage.js) records SHA-256 hashes of the exact bytes of every source file; the
-# PowerShell and VBScript files are CRLF. A checkout that rewrote line endings would change those hashes.
-* -text
-*.png binary
-*.ico binary

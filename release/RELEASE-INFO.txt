@@ -1,0 +1,39 @@
+CLAUDE DESKTOP COMPANION (installed as "Claude Notifier") - RELEASE INFORMATION, v1.0.0
+=====================================================================================
+
+Installer
+---------
+File:        ClaudeNotifierSetup.exe   (published as a GitHub Release asset, not committed to the repository)
+Size:        24,639,703 bytes (23.5 MB)
+SHA-256:     76528ad2830a22e63b78822eb5989c29c3de899a3ddf19acdcf0741233ed18b4
+Version:     1.0.0
+Built:       2026-11-10 with Inno Setup 6.7.3
+Signature:   NOT SIGNED (Authenticode status: NotSigned)
+
+*** The installer is unsigned. Windows SmartScreen may warn about it, and Windows 11 Smart App
+*** Control may block it (and its generated uninstaller) with no per-file override. Reliable
+*** distribution to such machines needs a code-signing certificate.
+
+Verify a download (PowerShell):
+    Get-FileHash .\ClaudeNotifierSetup.exe -Algorithm SHA256
+
+Contents of the installer (the verified release stage, unmodified)
+-------------------------------------------------------------------
+Application files:       32 (31 listed in the manifest + the manifest itself)
+Manifest SHA-256:        35a30fbf35024b7012121fdae1925d901f58ffe5e4fd24cacdf935eddce7fa7a
+Runtime:                 Node.js v24.18.0, renamed ClaudeNotifier.exe, unmodified, Authenticode valid
+                         (OpenJS Foundation), SHA-256 9a4eb5f1c29c6a2e93852ead46b999e284a6a5ca8bab4d4e241d587d025a52de
+
+Where it installs
+-----------------
+Program:     %LOCALAPPDATA%\Programs\Claude Notifier       (per user, no administrator rights)
+User data:   %USERPROFILE%\.claude-notifier                (never touched by Setup or uninstall)
+Shortcut:    Start Menu\Programs\Claude Notifier.lnk       (+ optional desktop shortcut, off by default)
+Startup:     HKCU\Software\Microsoft\Windows\CurrentVersion\Run, value "ClaudeNotifier" (optional, off by default)
+
+Verification recorded for this release
+--------------------------------------
+verify-stage.js (release stage, end to end):      38 / 38
+installer, silent (step20, isolated identity):    40 / 40
+installer, graphical wizard (step21):             31 / 31
+See tests/README.md for the other suites and the honest notes (step2 / step6).
